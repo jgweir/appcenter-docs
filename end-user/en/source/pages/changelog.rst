@@ -3,6 +3,41 @@
 Changelog
 =========
 
+3.7-4
+-----
+
+Release Date: 2017-03-14
+
+RFEs
+~~~~
+
+* 6839 Publishing machine images to AWS, S3 bucket information no longer required in the publish request
+
+Bug Fixes
+~~~~~~~~~
+
+* 7093 Generation failure with Debian 8 backports repo packages (dependency checking)
+* 7075 MySoftware files are not copied on the filestystem when generating CentOS 7 ISO images
+* 7045 If Scanned machine has a file named like ``%%0E^0E4^0E407559%%footer.tpl.php``, the scan fails
+* 7038 Fail to generate Windows machine image created from a VMDK formatted golden image
+* 7036 ``rpmgen -e`` (exclude dir list) option is not working correctly
+* 6990 Upload a logo which is not png or jpg raise an error but erase the existing logo
+* 6988 The scan status is not updated to ``error`` when an error occurs during the overlay upload
+* 6985 URIs containing certain characters (e.g. ``|``) is not encoded properly, resulting in a scan error
+* 6972 After deleting a custom license in ``MySofware`` or ``Project`` , the done icon is still displayed in the UI beside the upload button
+* 6945 ``uforge org category delete`` fails with two arguments
+* 6943 A file or directory name whose include a line feed (LF) is not present in the scan result.
+* 6930 Cannot generate a machine image where the appliance template contains ``unformatted`` logical volumes
+* 6926 Inconstent update of appliance template revision when saving information
+* 6915 Projects non-native files are ignored if my software has the same name.
+* 6901 Incorrect warning message when appliance templates have multi disk partitions for some formats
+* 6801 Cannot download non-cached software using artifact accounts after the password is updated.
+* 6624 Issue when adding PDF as custom license to a project
+* 6311 Scanning a Windows with disk exclude option does not work
+* 5994 My profile picture is not displayed on ``Activity Stream Workspace``
+* 3131 Machine images of a deactivated user should not be downloadable
+
+
 3.7-3
 -----
 
@@ -112,7 +147,6 @@ Bug Fixes
 * 6536 Scanning a linux system with a filename including pipes ``|`` fails
 * 6657 Scan does not read KEYBOARD in metadata
 * 6658 Logs from SELinuxModeParser.java show KeyboardParser 
-
 
 
 3.7

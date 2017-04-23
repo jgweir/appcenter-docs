@@ -3,6 +3,26 @@
 Changelog
 =========
 
+3.7-5
+-----
+
+Release Date: 2017-05-02
+
+Bug Fixes
+~~~~~~~~~
+
+* 7535 Wrong values in /etc/fstab if the appliance has both partition '/' and partition '/boot'
+* 7522 ``hammr template import`` fails for certain types of advanced partitioning tables
+* 7404 Windows scan command displayed in the UI is wrong
+* 7248 Problem displaying install welomc pages for CentOS 7.0
+* 7180 The scan binary ignores option ``-e "/"``
+* 7152 Scan cannot treat files whose name includes ``>``.
+* 7114 Scanning a server with a file larger than 40 GB fails
+* 6949 Windows generation error when the user has not provided enough disk space is not understandable
+* 6871 Oracle Linux 7 and Scientific Linux 7 machine images do not boot if the appliance templates has logical volumes
+* 4020 Scan binary's ``-e`` option does not exclude some files and/or directory
+
+
 3.7-4
 -----
 
